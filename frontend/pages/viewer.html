@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visor de Libro — Biblioteca Virtual</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">📚 Biblioteca Virtual</div>
+    <div class="nav-links">
+      <a href="dashboard.html" class="nav-link">Inicio</a>
+      <a href="books.html" class="nav-link">Gestionar Libros</a>
+      <button class="btn btn-outline btn-sm" id="logout-btn">Cerrar Sesión</button>
+    </div>
+    <button class="nav-toggle" id="nav-toggle">☰</button>
+  </nav>
+
+  <main class="container viewer-container">
+    <div class="viewer-header">
+      <div>
+        <h2 id="book-title">Cargando...</h2>
+        <p id="book-author" class="text-muted"></p>
+      </div>
+      <a id="download-btn" class="btn btn-primary" href="#" target="_blank">
+        ⬇ Descargar PDF
+      </a>
+    </div>
+
+    <div class="pdf-viewer-wrapper">
+      <iframe id="pdf-iframe" class="pdf-iframe" src="" title="Visor PDF"></iframe>
+    </div>
+
+    <div class="book-info-card">
+      <h4>Sinopsis</h4>
+      <p id="book-synopsis">—</p>
+      <p class="text-muted" id="book-date"></p>
+    </div>
+  </main>
+  <script src="../js/viewers.js"></script>
+</body>
+</html>

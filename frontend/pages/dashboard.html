@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — Biblioteca Virtual</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">📚 Biblioteca Virtual</div>
+    <div class="nav-links">
+      <a href="dashboard.html" class="nav-link active">Inicio</a>
+      <a href="books.html" class="nav-link">Gestionar Libros</a>
+      <a href="upload.html" class="nav-link">Subir Libro</a>
+      <button class="btn btn-outline btn-sm" id="logout-btn">Cerrar Sesión</button>
+    </div>
+    <button class="nav-toggle" id="nav-toggle">☰</button>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Bienvenido, <span id="admin-name">Administrador</span> 👋</h2>
+      <p>Gestiona tu colección de libros digitales desde este panel.</p>
+    </section>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-icon">📖</span>
+        <div>
+          <p class="stat-value" id="total-books">—</p>
+          <p class="stat-label">Libros totales</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🆕</span>
+        <div>
+          <p class="stat-value" id="recent-books">—</p>
+          <p class="stat-label">Agregados este mes</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <h3 class="section-title">Últimos libros agregados</h3>
+      <div class="books-grid" id="recent-grid">
+        <p class="loading-text">Cargando...</p>
+      </div>
+    </section>
+  </main>
+  <script src="../js/books.js"></script>
+</body>
+</html>
