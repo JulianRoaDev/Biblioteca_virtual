@@ -10,9 +10,12 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// ✅ CORS ampliado — permite file:// y localhost
 app.use(cors({
-  origin: '*',           // En desarrollo acepta cualquier origen
+  origin: [
+    'https://proyecto-biblioteca-virtual.netlify.app/', // URL de producción
+    'http://localhost:3000', // para desarrollo local
+    'http://localhost:5500',
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
