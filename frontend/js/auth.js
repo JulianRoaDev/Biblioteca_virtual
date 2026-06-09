@@ -1,4 +1,4 @@
-const API = 'https://biblioteca-virtual-kos6.onrender.com';
+const API = 'https://biblioteca-virtual-kos6.onrender.com/api';
 
 document.getElementById('login-btn').addEventListener('click', async () => {
   const username = document.getElementById('username').value.trim();

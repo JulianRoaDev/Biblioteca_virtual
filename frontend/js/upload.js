@@ -1,4 +1,4 @@
-const API = 'https://biblioteca-virtual-kos6.onrender.com';
+const API = 'https://biblioteca-virtual-kos6.onrender.com/api';
 function getToken() { return localStorage.getItem('token'); }
 
 if (!getToken()) window.location.href = 'login.html';
