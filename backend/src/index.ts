@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors({
   origin: [
-    'https://proyecto-biblioteca-virtual.netlify.app/', // URL de producción
+    'https://proyecto-biblioteca-virtual.netlify.app', // URL de producción
     'http://localhost:3000', // para desarrollo local
     'http://localhost:5500',
   ],
